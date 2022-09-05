@@ -8,7 +8,7 @@ namespace Calculator{
         static string Operador = "";
         static float Result = 0.0f;
         static float FloatCurrent = 0.0f;
-         static int IntCurrent = 0;
+        static int IntCurrent = 0;
         static void Main(string[] args) {
             
             Console.Clear(); 
@@ -25,13 +25,18 @@ namespace Calculator{
              Console.WriteLine(" 2 - Subtração");
              Console.WriteLine(" 3 - Multiplicar");
              Console.WriteLine(" 4 - Divisão");
+             Console.WriteLine(" 5 - Exit");
 
              int Opcao = TestInt(Console.ReadLine()) ;
-             if (Opcao  == 1 || Opcao  == 2|| Opcao  == 3|| Opcao == 4){
-                 Console.Clear();
+             if (Opcao  == 1 || Opcao  == 2|| Opcao  == 3|| Opcao == 4 || Opcao == 5){
+               
+                if(Opcao == 5)
+                  System.Environment.Exit(-1);
+                  
+                Console.Clear();
                 Console.WriteLine("Digite o Primeiro Valor");
          
-          
+            
 
                 float Valor1 = TestFloat(Console.ReadLine());
                  Console.WriteLine("Digite o Segundo Valor");
