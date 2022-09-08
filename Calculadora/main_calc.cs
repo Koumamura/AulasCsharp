@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Calculator{
 
-    class  Program{
+    class  main_calc{
         static string Operador = "";
         static float Result = 0.0f;
         static float FloatCurrent = 0.0f;
